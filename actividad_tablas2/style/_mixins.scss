@@ -1,0 +1,140 @@
+
+@mixin nav-bar {
+    
+    input[type=checkbox]#menu {
+        display: none;
+        &:checked {
+            & + nav#superior {
+                display: block;
+            }
+        }
+    }
+    nav#superior {
+        
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            width: 100%;
+            color: black;
+            a, span{
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline flow-root list-item;
+                padding: 10px 10px 10px 20px;
+                transition: 1s all;
+                margin-left: 30px;
+   
+               
+                &:hover {
+                    background: #000;
+                    border-left: 10px solid #333;
+                    color: #fff;
+                }
+            }
+            i{
+                margin-left: 3%;
+                width: 10px;
+            }
+        }
+        
+    }
+
+    @media all and (max-width: 768px) {
+        /* En smartphone mostramos el botón */
+        input[type=checkbox]#menu {
+            display: block;
+        }
+        nav#superior {
+            display: none;
+            ul {
+                flex-direction: column;
+                a {
+                    width: 23%;
+                }
+                li,summary{
+                    text-align: center;
+                }
+            }
+        }   
+    }
+}
+
+
+
+@mixin grid {
+    display: grid;
+    background-color: #fff;
+    color: #444;
+    grid-template-columns: 300px    auto;
+    grid-template-rows: auto;
+    @media all and(min-width:768px) {
+
+        grid-template-areas: "header header header header header header" 
+                             "sidebar content content content content content" 
+                             "sidebar content content content content content" 
+                             "sidebar content content content content content" 
+                             "sidebar content content content content content" 
+                             "sidebar content content content content content" 
+                             "footer footer footer footer footer footer";
+        
+    }
+    @media all and(max-width:767px) {
+        grid-template-areas: "header header header header"
+                             "sidebar sidebar sidebar sidebar" 
+                             "content content content content" 
+                             "content content content content" 
+                             "content content content content" 
+                             "footer footer footer footer";
+    }
+}
+
+@mixin sprite($width,$image,$x,$y) {
+    width: $width;
+    height: 100px;
+    background: url($image) $x $y;
+    background-repeat: no-repeat;
+}
+@mixin header(){
+    font-family: Arial, Helvetica, sans-serif;
+    * {padding: 3px; margin: 0;}
+
+    .flex-container  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+         margin: 0 0 0 .45em;
+         a {
+            color: rgb(28, 24, 22);
+          }
+        }   
+        .logo, .navigation {
+            list-style: none;
+            text-transform: uppercase;
+        }
+    
+        .logo a, .navigation a {
+            text-decoration: none;
+            letter-spacing: .45rem;
+        }
+    
+        .navigation  {
+            display: flex;
+            a {
+                display: block;
+                padding: 1em;
+                color:black;
+                &:hover{
+                    color:white;
+                    background-color: #000; 
+                }
+            }
+        }
+    }
+
+   
+}

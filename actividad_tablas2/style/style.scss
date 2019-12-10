@@ -1,0 +1,50 @@
+@import "./_mixins";
+
+.grid-container {
+    @include grid;
+  }
+#navigation_menu {
+    @include nav-bar;
+  grid-area: sidebar;
+
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+main {
+  grid-area: content;
+ /*  background-color: blue; */
+  min-height: 500px;
+}
+header {
+  @include header();
+  min-height: 50px;
+  grid-area: header;
+}
+footer {
+  min-height: 50px;
+  grid-area: footer;
+  /* background-color: yellow; */
+}
+
+
+
+// .bg-banner  { /* sprite banner */
+    //   @include sprite(88%,'./img/css_sprites.png', -10px, -10px);
+    // }
+    // .bg-logo { /* sprite logo */
+    //   @include sprite(6%,'./img/css_sprites.png', -130px, -135px);
+    // }
+    
+    // .bg-login { /* sprite login */
+    //   @include sprite(9%,'./img/css_sprites.png', -5px, -135px);
+    // }
+
+ 
+
+
+
+
+
+
