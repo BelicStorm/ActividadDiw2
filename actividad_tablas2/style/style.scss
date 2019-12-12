@@ -1,7 +1,5 @@
 @import "./_mixins";
 
-//VARIABLES PARA LAS PÁGINAS 10, 11, 12, 15, Y 16
-
 //variables globales
 $font: #{"Arial"};
 
@@ -15,47 +13,108 @@ $colors: (
 );
 /////////////////////////////////////////////////
 
+@import "./_mixins";
+///////////////////////////////////////////////
+///Crea el grid layout de general, el cual abarca el footer, header, navbar lateral y el main
+//////////////////////////////////////////////
 .grid-container {
     @include grid;
   }
+///////////////////////////////////////////////
+///Incluimos el mixin encargado de formatear las clases e id del html e indicamos a que area del grid pertenece
+//////////////////////////////////////////////
 #navigation_menu {
     @include nav-bar;
   grid-area: sidebar;
 
 }
+///////////////////////////////////////////////
+/// Añadimos un ancho del 100% y un margen automatico para todo el body
+//////////////////////////////////////////////
 body {
   width: 100%;
   margin: auto;
 }
+///////////////////////////////////////////////
+/// En el main añadimos el mixin encargado de formatar la pagina de info y el container
+/// de nuevo contenido de la pagina de bienvenida. Ademas de eso establecemos un margin generico
+/// para todos los contenidos que albergara el main, su area en el grid y su altura minima.
+//////////////////////////////////////////////
 main {
+  @include info_page();
+  @include new_content_container();
+  margin: 2% 2% 0% 0%;
   grid-area: content;
- /*  background-color: blue; */
   min-height: 500px;
 }
+///////////////////////////////////////////////
+/// Incluimos el mixin encargado de formatar el header, le seteamos una altura minima y el
+/// area del grid a la que pertenece
+//////////////////////////////////////////////
 header {
   @include header();
   min-height: 50px;
   grid-area: header;
 }
+///////////////////////////////////////////////
+/// Le damos una altura minima y le indicamos a que area del grid pertenece
+//////////////////////////////////////////////
 footer {
   min-height: 50px;
   grid-area: footer;
   /* background-color: yellow; */
 }
 
-// .bg-banner  { /* sprite banner */
-    //   @include sprite(88%,'./img/css_sprites.png', -10px, -10px);
-    // }
-    // .bg-logo { /* sprite logo */
-    //   @include sprite(6%,'./img/css_sprites.png', -130px, -135px);
-    // }
-    
-    // .bg-login { /* sprite login */
-    //   @include sprite(9%,'./img/css_sprites.png', -5px, -135px);
-    // }
-
-/////////////////ESTILOS PÁGINAS 10, 11, 12, 15 Y 16///////////////////////////////////////////////
-//ordenado por número de página
+///////////////////////////////////////////////
+/// Esta id es la encargada de formatar los formularios de login y registro
+//////////////////////////////////////////////
+#auth_container{
+  @include error_zone();/// Incluimos el mixin de la zona de error
+  text-align: center;
+  margin: 3%;
+  #auth_tittle{ // establecemos el formato del titulo titulo 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+  #auth_form{ /// EL formulario estara dispuesto como un flexbox cuya direccion sera en columna
+    display: flex;
+    flex-flow: column;
+    margin: inherit;
+    select{ //le damos formato al select el cual tendra un un borde inferior en gris el cual se volvera negro al pasar por encima
+      margin-bottom: 1em;
+      padding: .25em;
+      border: 0;
+      border-bottom: 1px solid gray;
+      background: none;
+      &:hover{
+        outline: 0;
+        border-bottom-color: black;
+      }
+        
+    }
+    button{ //Damos forma a los botones del formulario
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    input{ //Y de la misma forma que con el select, damos formato al input el cual
+           // cambiara el color de su borde inferior al pasar por encima
+      border: none;
+      border-bottom: 1px solid gray;
+      margin: 10px;
+      &:hover{
+        border-bottom: 1px solid black;
+      }
+    }
+    .form_item{ //Esta clase se encarga de separar, con un margen superior, los componentes del formulario
+      margin-top: 2%;
+    }
+  }
+}
 
 //incluimos todos los border y paddings en el tamaño total de los elementos
 *{
