@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+  </head>
+
+  <body class="text-center">
+      <h1>Register</h1>
+    <form class="container">
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <label for="inputEmail3" class="col-sm-2 col-form-label"> <i class="fa fa-envelope icon"></i> Email</label>
+            <div class="col-sm-6">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <label for="inputEmail3" class="col-sm-2 col-form-label"><i class="fa fa-key icon"></i> Password</label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <i class="fa fa-calendar"></i>
+                <input type="date" name="date" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel"  pattern="^[9|8|7|6]\d{8}$">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                    <i class="fa fa-briefcase"></i>
+                    <select name="profesion">
+                        <option value="Teacher">---</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Student">Other</option>
+                    </select>
+            </div>
+        </div>
+        <div class="form-group row">
+           <div class="col-sm-12">
+                <span>Gender</span>
+            <label>
+                    <i class="fa fa-venus"></i><input name="gender" type="radio">
+            </label>
+            <label>
+                    <i class="fa fa-mars"></i><input name="gender" type="radio">
+            </label>
+            <label>
+                    <i class="fa fa-neuter"></i><input name="gender" type="radio">
+            </label>
+            <label>
+                    <i class="fa fa-transgender-alt"></i><input name="gender" type="radio">
+            </label>
+            <label>
+                    <i class="fa fa-genderless"></i><input name="gender" type="radio">
+            </label>
+           </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-6">
+                <button type="submit" class="btn btn-dark">Sign in</button>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn btn-dark" href="index.html">Back</a>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                Error Zone
+            </div>
+        </div>
+    </form>
+  </body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
