@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Detail audio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Css de bootstrap 4 minificado -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Css de Font Awesome para los iconos de la aplicacion -->
+    <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--enlace a css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Contenedor de la barra de navegacion. Corte 1200px. Fondo negro y letra blanca -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <!-- Logo del navbar -->
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Search -->
+        <form class="form-inline">
+            <a href="search.html"><i class="fa fa-search"></i></a>
+            <input class="form-control form-control-sm mr-lg-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- Input de busqueda de la aplicacion -->
+        </form>
+
+        <!-- Parte colapsable del navbar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- Item dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-video"></i>
+                        See Videos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="my_videos.html" class="dropdown-item">Todos</a>
+                        <a href="my_videos.html" class="dropdown-item">Deportes</a>
+                        <a href="my_videos.html" class="dropdown-item">Educación</a>
+                        <a href="my_videos.html" class="dropdown-item">Humor</a>
+                        <a href="my_videos.html" class="dropdown-item">Noticias</a>
+                        <a href="my_videos.html" class="dropdown-item">Tiempo Libre</a>
+                        <a href="my_videos.html" class="dropdown-item">Otros</a>
+                        <a href="my_videos.html" class="dropdown-item">Aleatorio</a>
+                    </div>
+                </li>
+                <!-- Item dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-volume-up"></i> Listen Audios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="my_audios.html" class="dropdown-item">Todos</a>
+                        <a href="my_audios.html" class="dropdown-item">Deportes</a>
+                        <a href="my_audios.html" class="dropdown-item">Educación</a>
+                        <a href="my_audios.html" class="dropdown-item">Humor</a>
+                        <a href="my_audios.html" class="dropdown-item">Noticias</a>
+                        <a href="my_audios.html" class="dropdown-item">Tiempo Libre</a>
+                        <a href="my_audios.html" class="dropdown-item">Otros</a>
+                        <a href="my_audios.html" class="dropdown-item">Aleatorio</a>
+                    </div>
+                </li>
+                <!-- Item del navbar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html"><i class="fa fa-info"></i> Info</a>
+                </li>
+                <!-- Item del navbar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina10.html"><i class="fa fa-search"></i> Adm.Users</a>
+                </li>
+                <!-- Item dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-file-video"></i>Video Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pagina11.html">Administrate Videos</a>
+                        <a class="dropdown-item" href="my_videos.html">My Videos</a>
+                        <a class="dropdown-item" href="upload_video.html">Upload Video</a>
+                        <a class="dropdown-item" href="streaming.html">Streaming Videos</a>
+                    </div>
+                </li>
+                <!-- Item dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-file-audio"></i> Audio Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pagina12.html">Administrate Audios</a>
+                        <a class="dropdown-item" href="my_audios.html">My Audios</a>
+                        <a class="dropdown-item" href="upload_audio.html">Upload Audio</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Links a las paginas de registro y login formatadas como botones bootstrap -->
+        <!-- Clase boton, boton pequeño, color primario -->
+        <a class="btn btn-sm btn-primary my-2 my-sm-0" href="register.html">Register</a>
+
+        <a class="btn btn-sm btn-primary my-2 my-sm-0" href="login.html">Login</a>
+
+        <!-- Boton para abrir el menu colapsado. La id hace referencia a la parte del navbar que colapsa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <!-- Content -->
+    <!--añado un id a la página para poder usar un css único para todas las páginas sin que se mezclen estilos-->
+    <div style="margin-top:30px">
+        <!--*********************************************************-->
+        <!--LEYENDA DE TAMAÑOS RESPONSIVE DE BOOTSTRAP-->
+        <!--.co-xl: >=1200px-->
+        <!--.col-lg: >=992px)-->
+        <!--.col-md: >=768px-->
+        <!--.col-sm: >=576px -->
+        <!--.col: <576px -->
+        <!--*********************************************************-->
+
+        <!--HEADER de la página, que contiene el título-->
+        <!--class m+t/l+número: añadimos márgen top y left a la cabecera-->
+        <header class="mt-4 ml-4">
+            <!--TÍTULO-->
+            <!--etiqueta span y class text-danger: agrega color rojo al texto-->
+            <p>Nombre usuario, bienvenido a <span class="text-danger">Red5Tube.</span></p>
+        </header>
+
+        <!--DETALLE AUDIO-->
+        <!--class container: permite trabajar con una estructura grid responsive, añadiendo cols y rows-->
+        <div class="container">
+            <!--añade una fila-->
+            <div class="row">
+                <!--añade una columna que ocupará 8 partes de 12 en tamaños grandes y el total de la pantalla en tamaño tablet y móvil-->
+                <!--class mx-auto: margin left y right auto, para centrar la card-->
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mx-auto ">
+                    <!--utilizamos el formato card, quitándole el borde-->
+                    <div class="card border-0">
+                        <!--cabecera de la card que contiene el audio, ponemos color de fondo blanco y quitamos el borde-->
+                        <div class="card-header bg-white border-0">
+                            <!--insertamos la imagen del audio, para darle tamaño, le decimos que siempre ocupe el 100% del tamaño de la card-->
+                            <img class="col-xl-12" src="./img/audio.jpg" alt="audio">
+                            <!--la etiqueta controls, agrega los controles de reproducción, le decimos que siempre ocupen el 100% del tamaño de la card-->
+                            <!--insertamos un margen top para separar los controles de la imagen-->
+                            <audio class="col-xl-12 mt-4" src="./multimedia/audio.mp3" controls>
+                                <!--este texto se mostrará si no se puede reproducir el audio-->
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </div>
+                        <!--contenido-->
+                        <div class="card-body">
+                            <!--título con el texto en negrita-->
+                            <h4 class="card-title font-weight-bold">Raggamuffin</h4>
+                            <!--descripción, con un margen inferior-->
+                            <p class="mb-2">Selah Sue</p>
+                            <!--texto, de color rojo-->
+                            <p class="card-text text-danger">3000 reproducciones</p>
+                        </div>
+                        <!--fin de la card-->
+                    </div>
+                    <!--fin del col-->
+                </div>
+                <!--fin del row-->
+            </div>
+            <!--fin del container-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="jumbotron text-center" style="margin-bottom:0;margin-top:30px">
+        <p>Footer</p>
+    </div>
+
+    <!-- JS necesario para el funcionamiento de Boostrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
