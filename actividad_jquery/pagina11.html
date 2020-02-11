@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin vídeos</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./style/img/favicon.png" type="image/x-icon">
+    <!--librería fontawesome-->
+    <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="flex-container">
+                <h1 class="logo"><a href="index.html">Home</a></h1>
+                <ul class="navigation">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="navigation_menu">
+            <input type="checkbox" id="menu">
+            <nav id="superior">
+                <ul>
+                    <li>
+
+                        <form action="search.html">
+                            <input type="text" placeholder="Search">
+                               <a href="search.html"><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                    <li>
+                                
+                                <details>
+                                    <summary><i class="fa fa-video"></i><span> See Videos</span></summary>
+                                    <a href="my_videos.html">Todos</a><br>
+                                    <a href="my_videos.html">Deportes</a><br>
+                                    <a href="my_videos.html">Educación</a><br>
+                                    <a href="my_videos.html">Humor</a><br>
+                                    <a href="my_videos.html">Noticias</a><br>
+                                    <a href="my_videos.html">Tiempo Libre</a><br>
+                                    <a href="my_videos.html">Otros</a><br>
+                                    <a href="my_videos.html">Aleatorio</a><br>
+                                    
+                                </details>
+                            </li>
+                            <li>
+                            
+                            <details>
+                                    <summary><i class="fa fa-video"></i> <span>Listen Audios</span></summary>
+                                    <a href="my_audios.html">Todos</a><br>
+                                    <a href="my_audios.html">Deportes</a><br>
+                                    <a href="my_audios.html">Educación</a><br>
+                                    <a href="my_audios.html">Humor</a><br>
+                                    <a href="my_audios.html">Noticias</a><br>
+                                    <a href="my_audios.html">Tiempo Libre</a><br>
+                                    <a href="my_audios.html">Otros</a><br>
+                                    <a href="my_audios.html">Aleatorio</a><br>
+                                    
+                                </details>
+                        </li>
+                       
+                    <li>
+                        <i class="fa fa-file-video"></i>
+                        <a href="streaming.html">Streaming Videos</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-upload"></i>
+                        <a href="upload_video.html">Upload Video</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-upload"></i>
+                        <a href="upload_audio.html">Upload Audio</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-video"></i>
+                        <a href="my_videos.html">My Videos</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-volume-up"></i>
+                        <a href="my_audios.html">My Audios</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-info"></i>
+                        <a href="info.html">Info</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a href="pagina10.html">Administrate Users</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-video"></i>
+                        <a href="adm_videos.html">Administrate Videos</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-sound"></i>
+                        <a href="pagina12.html">Administrate Audios</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+        <!--Añadimos un id para añadir estilo por css-->
+        <main id="pagina10">
+
+            <header>
+                <h1>Administración de vídeos</h1>
+                <!--utilizamos la etiqueta span para darle un color diferente al texto que contiene-->
+                <p>Nombre usuario, bienvenido a <span>Red5Tube.</span></p>
+            </header>
+
+            <!--tabla administración de usuarios-->
+            <!--utilizamos un grid-->
+            <div id="search-grid-container">
+                <div>Búsqueda de usuario</div>
+                <div>Introduce parte del alias del usuario:</div>
+                <div><input type="text" placeholder=" red5tube"></div>
+                <div><input type="button" id="show_results" value="Buscar"></div>
+            </div>
+
+            <!--tabla mantenimiento de vídeos-->
+            <!--utilizamos un grid-->
+            <input type="button" class="new_video result" id="new_result" value="Añadir Nuevo Video">
+            <div id="edit_form_container"></div>
+            <div class="result" id="maintenance-grid-container">
+
+                <!--cabecera-->
+                <div id="head">Mantenimiento de vídeos<i class="fas fa-video"></i></div>
+
+                <!--títulos-->
+                <div id="title1">Usuario</div>
+                <div id="title2">Nombre</div>
+                <div id="title3">Título</div>
+                <div id="title4">Comentarios</div>
+                <div id="title5">Categoría</div>
+                <div id="title6"></div>
+
+                <!--ítems-->
+                <div class="sub-family-1" id="item1">red5tube</div>
+                <div class="sub-family-1" id="item2">red5tube.mp4</div>
+                <div class="sub-family-1" id="item3">Party</div>
+                <div class="sub-family-1" id="item4">Great!</div>
+                <div class="sub-family-1" id="item5">TIEMPO LIBRE</div>
+                <div class="sub-family-1" id="item6" class="sub-family-1 container">
+                    <i class="far fa-edit edit-sub-family sub-family-1 videos"></i>
+                    <i class="fa fa-trash delete-sub-family sub-family-1"></i>
+                </div>
+
+                <div class="sub-family-2" id="item7">red5tube</div>
+                <div class="sub-family-2" id="item8">red5tube.mp4</div>
+                <div class="sub-family-2" id="item9">Party</div>
+                <div class="sub-family-2" id="item10">A great summer!</div>
+                <div class="sub-family-2" id="item11">TIEMPO LIBRE</div>
+                <div class="sub-family-2" id="item12" class="sub-family-1 container">
+                    <i class="far fa-edit edit-sub-family sub-family-2 videos"></i>
+                    <i class="fa fa-trash delete-sub-family sub-family-2"></i>
+                </div>
+
+                <!--paginación-->
+                <div id="foot">
+                    <select>
+                        <!--permite seleccionar el número de filas que queremos mostrar-->
+                        <option value="5" selected>5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+
+                    <!--botones de paginación, iconos de fontawesome-->
+                    <button><i class="fas fa-step-backward"></i></button>
+                    <button><i class="fas fa-backward"></i></button>
+                    <span>(1 de 1)</span>
+                    <button><i class="fas fa-forward"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+        </main>
+        <!--Esta página no tiene footer-->
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
