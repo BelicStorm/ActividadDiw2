@@ -1,0 +1,288 @@
+/* ORDENADO POR PÁGINAS */
+
+/************** PÁGINA 10 *****************/
+#bodyPag10 {
+  /*margenes y fuente del body de la página*/
+  font-family: arial;
+  margin: 0px 60px 20px 20px;
+  font-size: 16px;
+}
+#bodyPag10 button {
+  /*formato botones paginación*/
+  height: 25px;
+  width: 25px;
+}
+#bodyPag10 h2,
+.red {
+  /* color del título de la página y el nombre de la web */
+  color: red;
+}
+#bodyPag10 select {
+  /*formato select elección de número de páginas a la vista*/
+  height: 24px;
+  width: 40px;
+}
+#bodyPag10 #tablaUsuarios {
+  /*formato tabla de mantenimiento de usuarios*/
+  border: solid 1px #d5d5d5;
+  border-collapse: collapse;
+  width: 100%;
+  height: 200px;
+}
+#bodyPag10 #tablaUsuarios tbody tr:nth-child(even) {
+  /*color de las celdas pares de la tabla usuarios*/
+  background-color: #ffe4dc;
+}
+#bodyPag10 #tablaUsuarios td,
+th {
+  /* formato de las filas de la tabla */
+  border: solid 1px grey;
+  padding: 8px;
+}
+#bodyPag10 #tablaUsuarios thead,
+tfoot {
+  /*color gris del encabezado y el pie de tabla*/
+  background-color: #d5d5d5;
+}
+#bodyPag10 .fas {
+  /* tamaño iconos paginación tabla */
+  font-size: 14px;
+}
+
+/***************************** PÁGINA 11 **********************************/
+#bodyPag11 {
+  /*margenes y fuente del body de la página*/
+  font-family: arial;
+  margin: 0px 60px 20px 20px;
+  font-size: 16px;
+}
+#bodyPag11 button {
+  /*formato botones paginación*/
+  height: 25px;
+  width: 25px;
+}
+#bodyPag11 h2,
+.red {
+  /* color del título de la página y el nombre de la web */
+  color: red;
+}
+#bodyPag11 select {
+  /*formato select elección de número de páginas a la vista*/
+  height: 24px;
+  width: 40px;
+}
+#bodyPag11 #tablaVideos {
+  /*formato tabla de mantenimiento de vídeos*/
+  border: solid 1px #d5d5d5;
+  border-collapse: collapse;
+  width: 100%;
+  height: 200px;
+}
+#bodyPag11 #tablaVideos tbody tr:nth-child(even) {
+  /*color de las celdas pares de la tabla vídeos*/
+  background-color: #ffe4dc;
+}
+#bodyPag11 #tablaVideos td,
+th {
+  /* estilo de las filas de la tabla */
+  border: solid 1px grey;
+  padding: 8px;
+}
+#bodyPag11 #tablaVideos thead,
+tfoot {
+  /*color gris del encabezado y el pie de tabla*/
+  background-color: #d5d5d5;
+}
+#bodyPag11 .fas {
+  /* tamaño iconos paginación tabla */
+  font-size: 14px;
+}
+
+/************************** PÁGINA 12 *******************************/
+
+#bodyPag12 {
+  /*margenes y fuente del body de la página*/
+  font-family: arial;
+  margin: 0px 60px 20px 20px;
+  font-size: 16px;
+}
+#bodyPag12 button {
+  /*formato botones paginación*/
+  height: 25px;
+  width: 25px;
+}
+#bodyPag12 h2,
+.red {
+  /*span y h2 color rojo*/
+  color: red;
+}
+#bodyPag12 select {
+  /*formato select elección de número de páginas a la vista*/
+  height: 24px;
+  width: 40px;
+}
+#bodyPag12 #tablaAudios {
+  /*formato tabla de mantenimiento de audios*/
+  border: solid 1px #d5d5d5;
+  border-collapse: collapse;
+  width: 100%;
+  height: 200px;
+}
+#bodyPag12 #tablaAudios tbody tr:nth-child(even) {
+  /*color de las celdas pares de la tabla audios*/
+  background-color: #ffe4dc;
+}
+#bodyPag12 #tablaAudios td,
+th {
+  /* estilo de las filas de la tabla */
+  border: solid 1px grey;
+  padding: 8px;
+}
+#bodyPag12 #tablaAudios thead,
+tfoot {
+  /*color gris del encabezado y el pie de tabla*/
+  background-color: #d5d5d5;
+}
+#bodyPag12 .fas {
+  /* tamaño iconos paginación tabla */
+  font-size: 14px;
+}
+
+/***************************BUSCADOR DE USUARIOS PAGINAS 10, 11 Y 12 ***********************/
+.busqueda {
+  /* formato del div que engloba el buscador */
+  border: 1px solid lightgray;
+  width: 665px;
+  margin-bottom: 20px;
+}
+.busqueda > p {
+  /* formato del título del buscadorl */
+  border: 1px solid grey;
+  background-color: lightgray;
+  font-weight: bold;
+  line-height: 50px;
+  padding-left: 10px;
+}
+.busqueda > form > label {
+  /* formato del label del formulario */
+  display: block;
+  margin-bottom: 20px;
+  font-weight: normal !important;
+}
+.busqueda > form > input {
+  /* formato de los inputs del formulario */
+  display: block;
+  margin-top: 20px;
+}
+.input_busqueda {
+  /* formato del input de texto */
+  text-overflow: ellipsis;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  height: 30px;
+}
+.busqueda > form {
+  /* formato del formulario */
+  padding-left: 10px;
+}
+.busqueda input[type="submit"] {
+  /* formato del botón submit */
+  background-color: red;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+}
+
+/*******************PAGINA 15 DETAIL VIDEO *********************/
+
+#bodyPag15 {
+  /* formato general de la página */
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+}
+#bodyPag15 video {
+  /* formato de la etiqueta vídeo */
+  display: inline-block;
+  width: 50%;
+}
+.pag15_title {
+  /* formato de los textos*/
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-top: 10px;
+}
+.pag15_title p:first-child {
+  /* formato del título */
+  font-weight: bold;
+}
+.pag15_views {
+  /* formato del texto de visualizaciones */
+  color: red;
+}
+
+/************************** PAGINA 16 DETAIL AUDIO ********************/
+#bodyPag16 {
+  /* formato general del contenido de la página */
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.pag16_audio {
+  /* formato de la imagen y los controles de audio */
+  width: 100%;
+  display: inline-block;
+}
+.pag16_audio > div > img {
+  /* tamaño de la imagen */
+  width: 35%;
+}
+.pag16_audio audio {
+  /* formato de los controles de audio */
+  margin-top: 20px;
+  width: 35%;
+}
+.pag16_data {
+  /* formato de los textos del audio */
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  margin-top: 20px;
+}
+.pag16_data p:first-child {
+  /* formmato del título del audio */
+  font-weight: bold;
+}
+.pag16_data p:last-child {
+  /* color de las reproducciones del audio */
+  color: red;
+}
+
+/* MEDIA QUERYS */
+
+/* en resoluciones menores de 768, las tablas se apilan */
+@media screen and (max-width: 768px) {
+
+  /*las pasamos a display block*/
+  table, thead, tbody, tfoot, th, td, tr {
+    display: block;
+    word-wrap: break-word;
+  }
+  /*ocultamos la columna del icono editar solo en la cabecera*/
+  thead > tr:nth-child(2) > th:nth-child(6){
+    display: none;
+  }
+  /*cuadro de búsqueda*/
+  .busqueda{
+    width: 100%;
+  }
+  /*botón de submit del cuadro de búsqueda*/
+  .busqueda input[type="submit"] {
+    width: 70px;
+  }
+} 
