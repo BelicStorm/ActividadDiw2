@@ -19,6 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/dashboard.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+<link href="css/estilo.css" rel='stylesheet' type='text/css' media="all" />
 <script src="js/jquery-1.11.1.min.js"></script>
 <!--start-smoth-scrolling-->
 <!-- fonts -->
@@ -149,8 +150,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="drop-navigation drop-navigation">
 				  <ul class="nav nav-sidebar">
 					<li class="active"><a href="index.html" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-					<li><a href="shows.html" class="user-icon"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true"></span>Mis Videos</a></li>
-					<li><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>Mis Audios</a></li>
+					<li><a href="my_videos.html" class="user-icon"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true"></span>Mis Videos</a></li>
+					<li><a href="my_audios.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>Mis Audios</a></li>
 					<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Videos<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
 						<li>
 							<ul class="cl-effect-1">
@@ -201,6 +202,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							});
 						</script>
 					<li><a href="streaming.html" class="news-icon"><span class="glyphicon glyphicon-film glyphicon-facetime-video" aria-hidden="true"></span>Video en directo</a></li>
+					<li><a href="upload_video.html" class="news-icon"><span class="glyphicon glyphicon-film glyphicon-arrow-up" aria-hidden="true"></span>Upload Video</a></li>
+					<li><a href="upload_audio.html" class="news-icon"><span class="glyphicon glyphicon-film glyphicon-arrow-up" aria-hidden="true"></span>Upload Audio</a></li>
 					<li><a href="info.html" class="news-icon"><span class="glyphicon glyphicon-film glyphicon-cog" aria-hidden="true"></span>Info</a></li>
 				  </ul>
 				  <!-- script-for-menu -->
@@ -218,6 +221,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- Page content Start -->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<!-- Content (only paste here the content before the footer) -->
+				
+	
+			<div class="menu">
+				Usuario, Bienvenido a <span class="span_fix">Pep</span>. <br>
+			</div>
+			<div class="content_header">Subir videos</div>
+		  
+				<form class="upload_form">
+					<label for="title"><strong>Titulo del video</strong></label>
+					<input type="text" id="title" name="title" placeholder="Introduce el nombre del video...">
+					<label for="comment"><strong>Titulo del video</strong></label>
+					<input type="text" id="comment" name="comment" placeholder="Introduce comentarios del video...">
+					<label for="category"><strong>Categoria:</strong></label>
+					<select name="category" id="category">
+						<option value="Deportes">Deportes</option>
+						<option value="Cine">Cine</option>
+					</select><br>
+					<label for="file">Selenciona el fichero: </label>
+					<input id="file" name="file" required type="file">
+				   
+					<button type="submit">Enviar</button><button type="reset">Valores por defecto</button>
+				</form>
+
+	
 			<!-- footer stuff start -->
 			<div class="footer">
 				<div class="footer-grids">
